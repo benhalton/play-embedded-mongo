@@ -17,7 +17,7 @@ trait EmbeddedMongo extends BeforeAfterExample {
   }
 
   def inMemoryMongoDatabase(name: String = "default"): Map[String, String] = {
-    Map("mongodb.uri" -> "mongodb://127.0.0.1:12345/wset-sat")
+    Map("mongodb.uri" -> "mongodb://127.0.0.1:12345/foo")
   }
 
   val mongoConfig: IMongodConfig = new MongodConfigBuilder().version(embedMongoDBVersion()).net(new Net(embedConnectionPort(), Network.localhostIsIPv6())).build()

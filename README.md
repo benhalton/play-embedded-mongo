@@ -13,4 +13,3 @@ class IntegrationSpec extends PlaySpecification with EmbeddedMongo {
 
   }
 }
-'''
